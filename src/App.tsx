@@ -55,7 +55,7 @@ function App() {
         active={active}
         onSetActive={handleSetActive}
       />
-      <SplitBill friends={friends} active={active} onChangeBalance={handleChangeBalance} />
+      <SplitBill friends={friends} active={active} onChangeBalance={handleChangeBalance} key={active} />
     </div>
   );
 }
